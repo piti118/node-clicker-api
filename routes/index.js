@@ -144,5 +144,8 @@ router.get('/v1/tally/:roomid', (req, res) => {
   });
 });
 
+router.get('*', function(req, res){
+  res.sendfile('../public/index.html');
+});
 
 module.exports = router;
